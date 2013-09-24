@@ -1,7 +1,16 @@
 <h1>Nueva Pregunta</h1>
 
 <%= form_for :question, url: questions_path do |f| %>
-
+    <% if @question.errors.any? %>
+        <div id="errorExplanation">
+          <h2><%=  pluralize(@question.errors.count, "error") %> impide crear la pregunta:</h2>
+          <ul>
+            <% @question.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
     <p>
       <%= f.label :question %><br>
       <%= f.text_area :question %>
@@ -41,3 +50,5 @@
       <%= f.submit %>
     </p>
 <% end %>
+
+<%= link_to 'Atrás', questions_path %>
