@@ -22,6 +22,20 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
+  def edit
+    @question = Question.find(params[:id])
+  end
+
+  def update
+    @question = Question.find(params[:id])
+
+    if @question.update(question_params)
+      redirect_to @question
+    else
+      render 'edit'
+    end
+  end
+
   private
     def question_params
       params.require(:question).permit(:question, :answer1, :answer2, :answer3, :answer4, :solution, :difficulty)

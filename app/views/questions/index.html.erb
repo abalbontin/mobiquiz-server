@@ -20,6 +20,8 @@
         <td><%= question.answer4 %></td>
         <td><%= question.solution %></td>
         <td><%= question.difficulty %></td>
+        <td><%= link_to 'Detalle', question_path(question) %></td>
+        <td><%= link_to 'Editar', edit_question_path(question) %></td>
       </tr>
   <% end %>
 </table>
