@@ -1,5 +1,7 @@
 class QuestionsController < ApplicationController
 
+  http_basic_authenticate_with name: "user", password: "secret"
+
   def new
        @question = Question.new
   end
@@ -34,6 +36,13 @@ class QuestionsController < ApplicationController
     else
       render 'edit'
     end
+  end
+
+  def destroy
+    @question = Question.find(params[:id])
+    @question.destroy
+
+    redirect_to questions_path
   end
 
   private
