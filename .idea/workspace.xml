@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c3d6b7e-208c-4b12-9127-1afab2c896b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/api/v1/questions_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mobiquiz-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380019178701" ignored="false" />
     <file path="/database.yml" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1379958376238" ignored="false" />
     <file path="/index.html.erb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380036903126" ignored="false" />
-    <file path="/routes.rb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380040076409" ignored="false" />
+    <file path="/routes.rb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380040314139" ignored="false" />
     <file path="/questions_controller.rb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380039205478" ignored="false" />
     <file path="/new.html.erb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380036519938" ignored="false" />
     <file path="/show.html.erb" changelist="7c3d6b7e-208c-4b12-9127-1afab2c896b2" time="1380031107731" ignored="false" />
@@ -58,7 +56,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="141" selection-end="141" vertical-scroll-proportion="0.114503816">
+            <state line="6" column="20" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17175573">
               <folding />
             </state>
           </provider>
@@ -1038,7 +1036,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="141" selection-end="141" vertical-scroll-proportion="0.114503816">
+        <state line="6" column="20" selection-start="163" selection-end="163" vertical-scroll-proportion="0.17175573">
           <folding />
         </state>
       </provider>
