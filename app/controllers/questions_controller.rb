@@ -15,6 +15,10 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
   end
 
+  def index
+    @questions = Question.all
+  end
+
   private
     def question_params
       params.require(:question).permit(:question, :answer1, :answer2, :answer3, :answer4, :solution, :difficulty)

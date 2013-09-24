@@ -1,0 +1,25 @@
+<h1>Preguntas</h1>
+
+<table>
+  <tr>
+    <th>Pregunta</th>
+    <th>Respuesta 1</th>
+    <th>Respuesta 2</th>
+    <th>Respuesta 3</th>
+    <th>Respuesta 4</th>
+    <th>Solucion</th>
+    <th>Dificultad</th>
+  </tr>
+
+  <% @questions.each do |question| %>
+      <tr>
+        <td><%= question.question %></td>
+        <td><%= question.answer1 %></td>
+        <td><%= question.answer2 %></td>
+        <td><%= question.answer3 %></td>
+        <td><%= question.answer4 %></td>
+        <td><%= question.solution %></td>
+        <td><%= question.difficulty %></td>
+      </tr>
+  <% end %>
+</table>
