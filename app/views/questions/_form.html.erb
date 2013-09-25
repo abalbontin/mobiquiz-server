@@ -1,6 +1,6 @@
 <% if @question.errors.any? %>
     <div id="errorExplanation">
-      <h2><%= pluralize(@question.errors.count, "error") %> impide crear la pregunta:</h2>
+      <h2><%= pluralize(@question.errors.count, "errores") %> impide que se pueda crear la pregunta:</h2>
       <ul>
         <% @question.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
@@ -14,7 +14,7 @@
     <div class="form-group">
       <%= f.label :pregunta, :class => 'col-lg-2 control-label' %>
       <div class="col-lg-10">
-        <%= f.text_area :question, :class => 'form-control' %>
+        <%= f.text_area :question, :class => 'form-control', :rows => '1' %>
       </div>
     </div>
 
