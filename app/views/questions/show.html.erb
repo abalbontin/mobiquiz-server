@@ -1,36 +1,38 @@
-<p>
-  <strong>Pregunta:</strong>
-  <%= @question.question %>
-</p>
+<div class="jumbotron">
+  <p>
+    <strong>Pregunta:</strong>
+    <%= @question.question %>
+  </p>
 
-<p>
-  <strong>Respuesta 1:</strong>
-  <%= @question.answer1%>
-</p>
+  <p>
+    <strong>Respuesta 1:</strong>
+    <%= @question.answer1%>
+  </p>
 
-<p>
-  <strong>Respuesta 2:</strong>
-  <%= @question.answer2%>
-</p>
+  <p>
+    <strong>Respuesta 2:</strong>
+    <%= @question.answer2%>
+  </p>
 
-<p>
-  <strong>Respuesta 3:</strong>
-  <%= @question.answer3%>
-</p>
+  <p>
+    <strong>Respuesta 3:</strong>
+    <%= @question.answer3%>
+  </p>
 
-<p>
-  <strong>Respuesta 4:</strong>
-  <%= @question.answer4%>
-</p>
+  <p>
+    <strong>Respuesta 4:</strong>
+    <%= @question.answer4%>
+  </p>
 
-<p>
-  <strong>Solución:</strong>
-  <%= @question.solution%>
-</p>
+  <p>
+    <strong>Solución:</strong>
+    <%= @question.solution%>
+  </p>
 
-<p>
-  <strong>Dificultad:</strong>
-  <%= @question.difficulty%>
-</p>
+  <p>
+    <strong>Dificultad:</strong>
+    <%= @question.difficulty%>
+  </p>
+</div>
 
 <%= link_to 'Atrás', questions_path %> | <%= link_to 'Editar', edit_question_path %>
