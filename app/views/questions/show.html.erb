@@ -1,8 +1,9 @@
 <div class="jumbotron">
-  <p>
-    <strong>Pregunta:</strong>
-    <%= @question.question %>
-  </p>
+  <h1>Detalle de la pregunta</h1>
+  <p class="lead">Aquí puedes ver el detalle de la pregunta</p>
+
+  <p><strong>Pregunta:</strong></p>
+  <%= @question.question %>
 
   <p>
     <strong>Respuesta 1:</strong>
@@ -35,4 +36,6 @@
   </p>
 </div>
 
-<%= link_to 'Atrás', questions_path %> | <%= link_to 'Editar', edit_question_path %>
+<%= link_to 'Atrás', questions_path, :class => 'btn btn-default' %>
+<%= link_to 'Editar', edit_question_path, :class => 'btn btn-default' %>
+<%= link_to 'Eliminar', @question, :class => 'btn btn-danger', method: :delete, data: { confirm: '¿Estás seguro de eliminar esta pregunta? Esta acción no se puede deshacer' } %>
