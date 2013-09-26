@@ -2,37 +2,45 @@
   <h1>Detalle de la pregunta</h1>
   <p class="lead">Aquí puedes ver el detalle de la pregunta</p>
 
-  <p><strong>Pregunta:</strong></p>
-  <%= @question.question %>
+  <p>
+    <strong>Pregunta:</strong>
+    <%= @question.question %>
+  </p>
 
   <p>
     <strong>Respuesta 1:</strong>
-    <%= @question.answer1%>
+    <%= @question.answer1 %>
   </p>
 
   <p>
     <strong>Respuesta 2:</strong>
-    <%= @question.answer2%>
+    <%= @question.answer2 %>
   </p>
 
   <p>
     <strong>Respuesta 3:</strong>
-    <%= @question.answer3%>
+    <%= @question.answer3 %>
   </p>
 
   <p>
     <strong>Respuesta 4:</strong>
-    <%= @question.answer4%>
+    <%= @question.answer4 %>
   </p>
 
   <p>
     <strong>Solución:</strong>
-    <%= @question.solution%>
+    Respuesta <%= @question.solution %>
   </p>
 
   <p>
     <strong>Dificultad:</strong>
-    <%= @question.difficulty%>
+    <% if @question.difficulty == 1 %>
+      <td>Fácil</td>
+    <% elsif @question.difficulty == 2 %>
+      <td>Media</td>
+    <% elsif @question.difficulty == 3 %>
+      <td>Difícil</td>
+    <% end %>
   </p>
 </div>
 
