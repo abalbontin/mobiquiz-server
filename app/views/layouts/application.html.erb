@@ -35,6 +35,13 @@
 </nav>
 
 <div class="container">
+  <% flash.each do |name, msg| %>
+      <div class="alert alert-<%= name == :notice ? "success" : "danger" %> alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= msg %>
+      </div>
+  <% end %>
+
   <div class="row">
     <div class="span9"><%= yield %></div>
     <div class="span3">

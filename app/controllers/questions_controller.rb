@@ -10,8 +10,10 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
 
     if @question.save
+      flash[:notice] = 'Has creado una pregunta correctamente. Oh yeah!'
       redirect_to @question
     else
+      flash[:error] = 'La pregunta no se ha podido crear... jo (revisa los errores)'
       render 'new'
     end
   end
@@ -32,8 +34,10 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
 
     if @question.update(question_params)
+      flash[:notice] = 'Has actualizada la pregunta :)'
       redirect_to @question
     else
+      flash[:error] = 'No se ha podido actualziar la pregunta :('
       render 'edit'
     end
   end
@@ -41,6 +45,8 @@ class QuestionsController < ApplicationController
   def destroy
     @question = Question.find(params[:id])
     @question.destroy
+
+    flash[:notice] = 'Pregunta borrada, eliminada, desaparecida de la faz de la tierra!!! vamos que ya no está :D'
 
     redirect_to questions_path
   end
